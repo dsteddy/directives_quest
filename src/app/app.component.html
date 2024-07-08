@@ -1,4 +1,4 @@
-<div [class]="{displayRed : isAdmin}"><h1>{{ title }}</h1></div>
+<div [ngClass]="{displayRed : isAdmin}"><h1>{{ title }}</h1></div>
 <div><button>View</button></div>
 <div [hidden]="!isAdmin"><button>Edit</button></div>
 <div><button (click)="changeAdminStatus()">{{ isAdmin ? 'Disconnect Admin' : 'Log Admin' }}</button></div>
