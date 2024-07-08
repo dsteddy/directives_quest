@@ -9,5 +9,6 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'directives_quest';
+  title: string = 'Bonjour';
+  isAdmin: boolean = true;
 }
