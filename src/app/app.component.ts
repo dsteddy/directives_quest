@@ -10,5 +10,8 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title: string = 'Bonjour';
-  isAdmin: boolean = true;
+  isAdmin: boolean = false;
+  changeAdminStatus() {
+    this.isAdmin = !this.isAdmin
+  }
 }
